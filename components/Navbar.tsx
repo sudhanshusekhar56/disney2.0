@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "./ThemeToggler";
 import SearchInput from "./SearchInput";
+import GenreDropdown from "./GenreDropdown";
 
 const Navbar = () => {
   return (
@@ -16,8 +17,8 @@ const Navbar = () => {
         />
       </Link>
       <div className="flex items-center justify-center gap-4">
-        {/* GenreDropdown */}
-        <SearchInput />
+        <GenreDropdown />
+        <SearchInput/>
         <ModeToggle />
       </div>
     </header>
